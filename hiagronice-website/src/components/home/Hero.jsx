@@ -3,9 +3,20 @@ import Button from "../common/Button";
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-brand-dark to-brand text-white">
-      <div className="max-w-7xl mx-auto px-4 py-24 grid md:grid-cols-2 gap-10 items-center">
-        <div>
+    <section className="relative overflow-hidden text-white">
+      {/* Full-bleed background image */}
+      <img
+        src="/images/hero-truck.jpg"
+        alt="Hiagronice garbage collection truck"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+
+      {/* Gradient overlay for text legibility */}
+      <div className="absolute inset-0 bg-gradient-to-r from-brand-dark/90 via-brand-dark/70 to-brand-dark/30" />
+
+      {/* Content sits above the image + overlay */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 py-24 md:py-36">
+        <div className="max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Transforming Waste into Clean Spaces
           </h1>
@@ -15,19 +26,12 @@ export default function Hero() {
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link to="/quote">
-              <Button variant="outline" className="bg-white">Get a Free Quote</Button>
+              <Button variant="outline">Get a Free Quote</Button>
             </Link>
             <Link to="/book">
               <Button>Book a Collection</Button>
             </Link>
           </div>
-        </div>
-        <div className="hidden md:block">
-          <img
-            src="/images/hero-truck.jpg"
-            alt="Hiagronice garbage collection truck"
-            className="rounded-xl shadow-2xl"
-          />
         </div>
       </div>
     </section>

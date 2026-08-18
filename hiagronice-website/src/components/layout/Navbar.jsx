@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import Button from "../common/Button";
 
 const links = [
   { to: "/", label: "Home" },
@@ -15,10 +14,10 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
-        <Link to="/" className="font-bold text-xl text-brand-dark">
-          Hiagronice
-        </Link>
-
+        <Link to="/" className="flex items-center gap-2 font-bold text-xl text-brand-dark">
+  <img src="/logo.svg" alt="Hiagronice logo" className="h-9 w-9" />
+  Hiagronice Services Limited
+</Link>
         <nav className="hidden md:flex items-center gap-8">
           {links.map((link) => (
             <NavLink
@@ -32,15 +31,6 @@ export default function Navbar() {
             </NavLink>
           ))}
         </nav>
-
-        <div className="hidden md:flex items-center gap-3">
-          <Link to="/quote">
-            <Button variant="outline">Get a Quote</Button>
-          </Link>
-          <Link to="/book">
-            <Button>Book a Collection</Button>
-          </Link>
-        </div>
 
         <button
           className="md:hidden text-gray-700"
@@ -58,12 +48,6 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link to="/quote" onClick={() => setOpen(false)}>
-            <Button variant="outline">Get a Quote</Button>
-          </Link>
-          <Link to="/book" onClick={() => setOpen(false)}>
-            <Button>Book a Collection</Button>
-          </Link>
         </div>
       )}
     </header>

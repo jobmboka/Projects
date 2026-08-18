@@ -1,5 +1,7 @@
 import Hero from "../components/home/Hero";
 import ServicesOverview from "../components/home/ServicesOverview";
+import Testimonials from "../components/home/Testimonials";
+import WhyChooseUs from "../components/home/WhyChooseUs";
 import Button from "../components/common/Button";
 import { Link } from "react-router-dom";
 
@@ -8,6 +10,8 @@ export default function Home() {
     <>
       <Hero />
       <ServicesOverview />
+      <Testimonials />
+      <WhyChooseUs />
       <section className="bg-brand/5 py-16">
         <div className="max-w-4xl mx-auto text-center px-4">
           <h2 className="text-3xl font-bold text-gray-900">Ready to get started?</h2>
