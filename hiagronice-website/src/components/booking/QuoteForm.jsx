@@ -27,6 +27,8 @@ export default function QuoteForm({ defaultService = "" }) {
     );
   }
 
+  const WHATSAPP_NUMBER = "254726911914"; // 0726911914 in international format, no +/spaces
+
   async function handleSubmit(e) {
     e.preventDefault();
     if (!validate()) {
@@ -35,9 +37,20 @@ export default function QuoteForm({ defaultService = "" }) {
     }
     setStatus("submitting");
     try {
-      // TODO: replace with your EmailJS / Formspree / backend endpoint call
-      // await sendQuoteRequest(values);
-      await new Promise((res) => setTimeout(res, 800)); // placeholder
+      const selectedService = services.find((s) => s.slug === values.service);
+
+      const message =
+        `*New Quote Request*%0A` +
+        `Name: ${values.name}%0A` +
+        `Email: ${values.email}%0A` +
+        `Phone: ${values.phone}%0A` +
+        `Service: ${selectedService ? selectedService.title : values.service}%0A` +
+        `Property Type: ${values.propertyType}%0A` +
+        `Frequency: ${values.frequency || "—"}%0A` +
+        `Details: ${values.details || "—"}`;
+
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+
       setStatus("success");
     } catch (err) {
       setStatus("error");
