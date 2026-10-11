@@ -61,13 +61,22 @@ export default function About() {
   return (
     <div>
       {/* Hero */}
-      <section className="relative text-white py-28 overflow-hidden">
+      <section className="relative text-white py-28 min-h-[420px] md:min-h-[520px] flex items-center overflow-hidden bg-gray-900">
+        {/* Blurred copy fills the side gaps */}
         <img
           src="/abouts.jpg"
-          alt="Hiagronice garbage collection illustration"
-          className="absolute inset-0 w-full h-full object-cover"
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover blur-2xl scale-110 opacity-60"
         />
-        <div className="absolute inset-0 bg-brand/80" />
+        {/* Full, uncropped image */}
+        <img
+          src="/cover.jpg"
+          alt="Hiagronice garbage collection truck"
+          className="absolute inset-0 w-full h-full object-cover opacity-0 md:opacity-100 transition-opacity duration-500"
+        />
+        {/* Neutral dark layer so the white text stays readable (delete this line for none) */}
+        <div className="absolute inset-0 bg-black/40" />
         <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
           <h1 className="text-4xl md:text-5xl font-extrabold">About Hiagronice</h1>
           <p className="mt-4 text-lg text-green-50 max-w-2xl mx-auto">
