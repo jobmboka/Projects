@@ -63,7 +63,7 @@ export default function About() {
       {/* Hero */}
       <section className="relative text-white py-28 overflow-hidden">
         <img
-          src="/about.jpg"
+          src="/abouts.jpg"
           alt="Hiagronice garbage collection illustration"
           className="absolute inset-0 w-full h-full object-cover"
         />
