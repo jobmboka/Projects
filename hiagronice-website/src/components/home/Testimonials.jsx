@@ -7,18 +7,18 @@ const testimonials = [
       "I used to dread garbage day because collection was so unreliable. Since switching to Hiagronice, it's like clockwork every week. Their team is polite and they actually clean up after themselves.",
   },
   {
-    name: "David Otieno",
-    role: "Facilities Manager, Westlands Office Park",
+    name: "Mineral Enterprises Ltd",
+    role: "Property Manager, Kitengela",
     rating: 4,
     quote:
       "We manage a busy commercial building and needed a waste partner who wouldn't cause disruptions during business hours. Hiagronice worked around our schedule and handled everything professionally.",
   },
   {
-    name: "Amina Hassan",
-    role: "Restaurant Owner, Mombasa Road",
+    name: "Alliance Realtors , JP house",
+    role: "Residential Property Manager, kitengela",
     rating: 5,
     quote:
-      "Fumigation and hygiene are non-negotiable in the food business. Their team is thorough, shows up on time, and always explains what they're doing. I recommend them to every restaurant owner I know.",
+      "We manage multiple residential properties and needed a waste partner who could handle the volume and variety of waste we generate. Hiagronice has been a reliable and efficient partner, and their team is always responsive to our needs.",
   },
   {
     name: "Peter Mwangi",
@@ -28,8 +28,8 @@ const testimonials = [
       "Hazardous waste disposal is not something you can afford to get wrong. Hiagronice handles it with the right documentation and care, which gives us peace of mind on every project.",
   },
   {
-    name: "Grace Njeri",
-    role: "Property Manager, Kilimani",
+    name: "Grace Seleyian",
+    role: "Property Manager, Kajiado",
     rating: 5,
     quote:
       "Booking a collection takes two minutes on their site and the team always confirms before arriving. Small things like that make a big difference when you're managing multiple properties.",

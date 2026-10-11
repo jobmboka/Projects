@@ -25,12 +25,12 @@ export default function Home() {
           <img
             src="/front-truck.jpg"
             alt="Hiagronice collection truck front view"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-fill"
           />
           <img
             src="/sidetruck.jpg"
             alt="Hiagronice collection truck side view"
-            className="w-full h-full object-contain"
+            className="w-full h-full object-fill"
           />
         </div>
         <div className="absolute inset-0 bg-black/65" />
