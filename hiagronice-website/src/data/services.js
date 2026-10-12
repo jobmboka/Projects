@@ -8,12 +8,11 @@ export const services = [
     image: "/images/garbage-collection.jpg",
   },
   {
-    slug: "fumigation-pest-control",
-    title: "Fumigation & Pest Control",
+    slug: "sanitary-collection",
+    title: "Sanitary Collection",
     tagline: "Protecting your home, safeguarding your health",
-    description:
-      "Fully qualified, accredited and certified fumigation and pest control to remove unwanted pests and rodents.",
-    image: "/images/fumigation.jpg",
+    description: "Supply of sanitary pads and safe, hygienic collection and disposal of sanitary waste for homes, offices, schools, and industrial sites.",
+    image: "/images/sanitary-collection.jpg",
   },
   {
     slug: "cleaning-services",

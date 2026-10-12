@@ -47,7 +47,7 @@ async function handleSubmit(e) {
       `Address: ${values.address}%0A` +
       `Notes: ${values.notes || "—"}`;
 
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message.split("%0A").map(encodeURIComponent).join("%0A")}`, "_blank");
 
     setStatus("success");
   } catch (err) {

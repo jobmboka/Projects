@@ -6,10 +6,10 @@ const services = [
     quote: "Turning waste into a cleaner tomorrow, one collection at a time.",
   },
   {
-    title: "Fumigation and Pest Control Services",
+    title: "Sanitary Collection Services",
     description:
-      "Count on our expert team for comprehensive fumigation and pest control solutions. Our highly-trained professionals are fully qualified, accredited, and certified to efficiently remove unwanted pests and rodents from your premises.",
-    quote: "Protecting your home, safeguarding your health — one pest at a time.",
+      "Count on our expert team for comprehensive sanitization and disinfection services. Our highly-trained professionals are fully qualified, accredited, and certified to efficiently maintain a healthy living environment.",
+    quote: "Protecting your home, safeguarding your health — one sanitization at a time.",
   },
   {
     title: "Cleaning Services",
@@ -114,8 +114,7 @@ export default function About() {
               every collection.
             </p>
             <p className="mt-4 text-gray-700 leading-relaxed">
-              Beyond garbage collection, our services span fumigation and pest
-              control, cleaning, landscaping, sale of waste bags, and specialized
+              Beyond garbage collection, our services span sanitization, cleaning, landscaping, sale of waste bags, and specialized
               hazardous waste management — giving homes, businesses, and
               industries across Kenya a single trusted partner for a cleaner
               environment.

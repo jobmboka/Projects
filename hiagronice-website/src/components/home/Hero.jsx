@@ -21,7 +21,7 @@ export default function Hero() {
             Transforming Waste into Clean Spaces
           </h1>
           <p className="mt-4 text-lg text-brand-light/90">
-            Reliable garbage collection, fumigation, cleaning, and hazardous
+            Reliable garbage collection, sanitary collection, cleaning, and hazardous
             waste management for homes, businesses, and industries across Kenya.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">

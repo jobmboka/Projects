@@ -1,15 +1,21 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Button from "../../components/common/Button";
-export default function FumigationPestControl() {
+export default function SanitaryCollection() {
   const service = {
-    title: "Fumigation & Pest Control",
+    title: "Sanitary Collection Services",
     tagline: "Protecting your home, safeguarding your health",
     description:
-      "Fully qualified, accredited and certified fumigation and pest control to remove unwanted pests and rodents. We use safe, effective treatments suited to homes, offices, warehouses, and industrial sites.",
-    image: "/images/fumigation.jpg",
-    slug: "fumigation-pest-control",
+      "We supply sanitary pads and provide safe, hygienic collection and disposal of sanitary waste for homes, offices, schools, hotels, and industrial sites. Our trained team handles everything discreetly and in line with environmental regulations.",
+    image: "/images/sanitary-collection.jpg",
+    slug: "sanitary-collection",
   };
   const included = [
+    "Supply of sanitary pads in bulk or on a recurring basis",
+    "Supply and servicing of sanitary disposal bins",
+    "Scheduled collection of sanitary waste",
+    "Safe transport to licensed disposal facilities",
+    "Hygienic, discreet service by trained staff",
+    "Flexible one-off or contract arrangements",
     "Pre-treatment inspection and pest identification",
     "Safe, licensed chemical and non-chemical treatments",
     "Rodent, cockroach, bedbug, and termite control",
@@ -18,10 +24,10 @@ export default function FumigationPestControl() {
     "Safety guidance for occupants during and after treatment",
   ];
   const steps = [
-    { title: "Request an Inspection", description: "Tell us the pest issue and site details so we can plan the right treatment." },
-    { title: "On-Site Assessment", description: "Our technicians inspect the property to identify pest type and entry points." },
-    { title: "Treatment Day", description: "Certified technicians apply safe, targeted fumigation using approved products." },
-    { title: "Follow-Up & Prevention", description: "We advise on prevention and schedule follow-ups if the infestation requires it." },
+    { title: "Request a Service", description: "Tell us whether you need sanitary pad supply, waste collection, or both, along with your site details and quantities." },
+    { title: "Site Assessment", description: "We assess your premises to plan bin placement, supply volumes, and a collection schedule." },
+    { title: "Supply & Installation", description: "We deliver sanitary pads and install discreet, hygienic sanitary disposal bins where needed." },
+    { title: "Scheduled Collection", description: "Our trained team collects and safely disposes of sanitary waste on a regular schedule." },
   ];
   return (
     <div>
@@ -65,8 +71,8 @@ export default function FumigationPestControl() {
       </div>
       <div className="bg-brand-dark py-16 text-white text-center">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-bold">Ready to pest-proof your space?</h2>
-          <p className="mt-3 text-white/80">Get a free quote or book a fumigation visit today.</p>
+          <h2 className="text-2xl md:text-3xl font-bold">Ready for a cleaner, healthier space?</h2>
+          <p className="mt-3 text-white/80">Get a free quote or book sanitary pad supply and waste collection today.</p>
           <div className="mt-6 flex flex-wrap justify-center gap-4">
             <Link to={`/quote?service=${service.slug}`}><Button variant="outline">Get a Quote</Button></Link>
             <Link to={`/book?service=${service.slug}`}><Button>Book Now</Button></Link>
